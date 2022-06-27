@@ -109,16 +109,56 @@ header nav ul {
 header li {
     font-size: 1.5rem;
 }
+ 
+header img:hover {
+    animation-name: logoEnMovimiento;
+    animation-duration:0.6s;
+}
+
+
+@keyframes logoEnMovimiento {
+    0% {}
+
+    12.5% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 
 
 
+}
 
 /* --------------------- MAIN ------------------------------------- */
 
 main {
-    background-color: rgb(36, 40, 73);
+    background: linear-gradient(to right bottom, rgb(26, 39, 94) 0%, rgba(32,40,75,1) 54%, rgba(42,32,75,1) 100%);
 }
-
 /* PORTADA */
 
 #seccion-portada{
@@ -149,7 +189,6 @@ main {
 #seccion-noticias {
     padding: 3% 5%;
     text-align: center;
-    background-color: rgb(41, 46, 85);
     height: auto;
 
     display: flex;
@@ -188,12 +227,12 @@ main {
 }
 
 
+
 /* EQUIPOS */
 
 #seccion-equipos {
     padding: 3%;
     text-align: center;
-    background-color: rgb(46, 52, 99);
 }
 
 #seccion-equipos h2{
@@ -202,6 +241,12 @@ main {
 
 #seccion-equipos img {
     margin: 1% 0%;
+}
+
+#seccion-equipos a:hover {
+    transform: scale(1.25);
+    transition-duration: 700ms;
+
 }
 
 .equipos-boton {
@@ -221,6 +266,7 @@ main {
 .equipos-boton a:hover {
    background-color: rgb(165, 42, 110); 
 }
+
 
 
 .imagen-banner {
