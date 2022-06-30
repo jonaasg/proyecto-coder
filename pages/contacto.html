@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Furious Gaming - Contacto</title>
 </head>
@@ -14,72 +15,109 @@
 <body>
     
   <!-- -------------------- HEADER ----------------------------->
-  <header>
+    <header class="navbar navbar-expand-lg">
 
-    <img src="../Imagenes/logo2.png" alt="logo">
+        <div class="container">
 
-    <nav>
-        <ul>
-            <li> <a href="../index.html"> Inicio </a></li>
-            <li> <a href="./noticias.html"> Noticias </a></li>
-            <li> <a href="./equipos.html"> Equipos </a></li>
-            <li> <a href="./tienda.html"> Tienda </a></li>
-            <li> <a href="./contacto.html"> Contacto </a></li>
-        </ul>
-    </nav>
+            <a class="navbar-brand" href="../index.html"> <img src="../Imagenes/logo2.png" alt="logo" class="w-25"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-</header>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-3 text-light" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="./noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="./equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light text-decoration-underline" href="./contacto.html">Contacto</a>
+                </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
 
 <!------------------------ MAIN ---------------------------------->
-<main>
 
-    <h2 class="seccion-titulo">Contacto</h2>
+    <main>
 
-    <section id="seccion-formulario">
+        <h2 class="display-4 fw-bold text-center text-lg-start">Contacto</h2>
 
-        <form class="form-formulario">
-            <div class="formulario-nombre">
-                <label for="campo-nombre">Nombre y apellido</label>
-                <input type="text" name="campo-nombre" id="campo-nombre" placeholder="Nombre y apellido">
+        <section id="seccion-formulario" class="p-5">
+            <div class="row rounded-3 shadow-lg border">
+
+                <div class="col-12">
+
+                    <h2 class="fs-5 text-center text-lg-start"> Si necesitas hacernos cualquier consulta relacionada con nuestro club o alguno de nuestros equipos, ponete en contacto con nosotros mediante el siguiente formulario.</h2>
+
+                    <form action="">
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="11-1111-1111">
+                        </div>
+
+                        <select class="form-select my-3" aria-label="Default select example">
+                            <option selected>Motivo del contacto</option>
+                            <option value="1">Prensa</option>
+                            <option value="2">Publicidad</option>
+                            <option value="3">Consultas varias</option>
+                        </select>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Hola Furios Gaming..."></textarea>
+                        </div>
+
+                        <div class="btn d-flex justify-content-center">
+                            <input type="submit" value="Enviar mensaje">
+                            <input type="reset">
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
 
+        </section>
 
-            <div class="formulario-email">
-                <label for="campo-email">Email</label>
-                <input type="email" name="campo-email" id="campo-email" placeholder="email@email.com">
-            </div>
+        <section>
 
-            <div class="formulario-telefono">
-                <label for="campo-telefono">Telefono</label>
-                <input type="tel" name="campo-telefono" id="campo-telefono" placeholder="11-1111-1111">
-            </div>
-            </div>
+            <img class="imagen-banner" src="../Imagenes/banner-sponsors.png" alt="banner-sponsors">
 
-            <div class="formulario-mensaje">
-                <label for="campo-mensaje">Mensaje</label>
-                <textarea name="campo-mensaje" id="campo-mensaje" cols="30" rows="10" id="campo-mensaje" placeholder="Escribinos tu mensaje"></textarea>
-            </div>
+        </section>
 
-            <div class="formulario-botones">
-                <input type="submit" value="Enviar mensaje">
-                <input type="reset">
-            </div>
-            </div>
-        </form>
-
-    </section>
-
-    <section>
-
-        <img class="imagen-banner" src="../Imagenes/banner-sponsors.png" alt="banner-sponsors">
-
-    </section>
-
-</main>
+    </main>
 
 
     <!--------------------- FOOTER -------------------------------->
-<footer>
+    <footer>
 
         <section id="footer-links">
             <h3>Furious Gaming</h3>
@@ -105,9 +143,9 @@
         </section>
 
 
-</footer>
+    </footer>
 
-
+<script src="../js/bootstrap.js"></script>
 </body>
 
 </html>
