@@ -14,74 +14,139 @@
 
 <body>
     
-  <!-- -------------------- HEADER ----------------------------->
-    <header>
+<!-- -------------------- HEADER ----------------------------->
+<header class="navbar navbar-expand-lg">
 
-        <img src="../Imagenes/logo2.png" alt="logo">
+    <div class="container">
 
-        <nav>
-            <ul>
-                <li> <a href="../index.html"> Inicio </a></li>
-                <li> <a href="./noticias.html"> Noticias </a></li>
-                <li> <a href="./equipos.html"> Equipos </a></li>
-                <li> <a href="./tienda.html"> Tienda </a></li>
-                <li> <a href="./contacto.html"> Contacto </a></li>
+        <a class="navbar-brand" href="../index.html"> <img src="../Imagenes/logo2.png" alt="logo" class="w-25"></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-3 text-light  mx-2" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light mx-2" href="./noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light text-decoration-underline mx-2" href="./equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light mx-2" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light mx-2" href="./contacto.html">Contacto</a>
+                </li>
+
             </ul>
+
         </nav>
 
-    </header>
+    </div>
+
+</header>
 
 <!------------------------ MAIN ---------------------------------->
-    <main>
+<main>
 
-        <h2>Equipos</h2>
+    <section id="seccion-equipos" class="container">
 
-        <section id="seccion-equipos" >
-
-            <div class="lista-equipos">
-                <img src="../Imagenes/csgo.jpg" alt="imagen cs go">
-                <p>Laser</p>
-                <p>Abm</p>
-                <p>Andrew</p>
-                <p>Kaiser</p>
-                <p>Tiko</p>
+        <h2 class="display-4 fw-bold text-center text-lg-start">Equipos</h2>
+        
+        <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../Imagenes/csgo.jpg" class="img m-0 h-100" alt="EquipoCsgo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title-equipos">Counter-Strike: Global Offensive</h3>
+                  <p class="card-text-equipos">Laser</p>
+                  <p class="card-text-equipos">Abm</p>
+                  <p class="card-text-equipos">Andrew</p>
+                  <p class="card-text-equipos">Kaiser</p>
+                  <p class="card-text-equipos">Tiko</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="lista-equipos">
-                <img src="../Imagenes/lol.jpg" alt="imagen league of legends">
-                <p>Emp</p>
-                <p>Feitan</p>
-                <p>Kartana</p>
-                <p>Puentinho</p>
-                <p>Viciun</p>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../Imagenes/lol.jpg" class="img m-0 h-100" alt="EquipoCsgo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title-equipos">League of Legends</h3>
+                  <p class="card-text-equipos">Emp</p>
+                  <p class="card-text-equipos">Feitan</p>
+                  <p class="card-text-equipos">Kartana</p>
+                  <p class="card-text-equipos">Puentinho</p>
+                  <p class="card-text-equipos">Viciun</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="lista-equipos">
-                <img src="../Imagenes/pubg.jpg" alt="imagen pubg">
-                <p>Milovan</p>
-                <p>Potro</p>
-                <p>Screaam</p>
-                <p>Tigger</p>
-                <p>Trigga</p>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../Imagenes/pubg.jpg" class="img m-0 h-100" alt="EquipoCsgo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title-equipos">PlayerUnknown's Battlegrounds</h3>
+                  <p class="card-text-equipos">Milovan</p>
+                  <p class="card-text-equipos">Potro</p>
+                  <p class="card-text-equipos">Screaam</p>
+                  <p class="card-text-equipos">Tigger</p>
+                  <p class="card-text-equipos">Trigga</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="lista-equipos">
-                <img src="../Imagenes/r6.jpg" alt="imagen rainbow 6">
-                <p>Wetz</p>
-                <p>Dirty</p>
-                <p>Pechito</p>
-                <p>Blk</p>
-                <p>Vj</p>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../Imagenes/r6.jpg" class="img m-0 h-100" alt="EquipoCsgo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title-equipos">Rainbow 6</h3>
+                  <p class="card-text-equipos">Wetz</p>
+                  <p class="card-text-equipos">Dirty</p>
+                  <p class="card-text-equipos">Pechito</p>
+                  <p class="card-text-equipos">Blk</p>
+                  <p class="card-text-equipos">Vj</p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div class="lista-equipos">
-                <img src="../Imagenes/wildrift.jpg" alt="imagen wildrift">
-                <p>Libra</p>
-                <p>Prusher</p>
-                <p>Capoxzseba</p>
-                <p>Eko</p>
-                <p>Sarther</p>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../Imagenes/wildrift.jpg" class="img m-0 h-100" alt="EquipoCsgo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title-equipos">League of Legends: Wild Rift</h3>
+                    <p class="card-text-equipos">Libra</p>
+                    <p class="card-text-equipos">Prusher</p>
+                    <p class="card-text-equipos">Capoxzseba</p>
+                    <p class="card-text-equipos">Eko</p>
+                    <p class="card-text-equipos">Sarther</p>
+                </div>
+              </div>
             </div>
+          </div>
 
 
         </section>
@@ -103,11 +168,11 @@
         <section id="footer-links">
             <h3>Furious Gaming</h3>
             <ul>
-                <li> <a href="./index.html"> Inicio </a></li>
-                <li> <a href="./pages/noticias.html"> Noticias </a></li>
-                <li> <a href="./pages/equipos.html"> Equipo </a></li>
-                <li> <a href="./pages/tienda.html"> Tienda </a></li>
-                <li> <a href="./pages/contacto.html"> Contacto </a></li>
+                <li> <a href="../index.html"> Inicio </a></li>
+                <li> <a href="./noticias.html"> Noticias </a></li>
+                <li> <a href="./equipos.html"> Equipo </a></li>
+                <li> <a href="./tienda.html"> Tienda </a></li>
+                <li> <a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
 

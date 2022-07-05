@@ -7,7 +7,7 @@
     }
     
 /* --------------------- LINKS ------------------------------------- */
-    
+
 a {
         text-decoration: none;
         color: white;
@@ -16,31 +16,28 @@ a {
     
 /* --------------------- LISTAS ------------------------------------- */
     
- ul,
- ol {
+ul,
+ol {
         list-style-type: none;
 }
     
     
 /* --------------------- IMAGENES ------------------------------------- */
     
- img {
+img {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-
 }
-    
-    /* iframe {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    
-    } */
 
-    /* --------------------- Tipografias ------------------------------------- */
-    
-    
+/* --------------------- FONDO ------------------------------------- */
+
+main {
+    background: linear-gradient(to right bottom, rgb(26, 39, 94) 0%, rgb(22, 25, 68) 50%, rgb(39, 28, 77) 100%);
+}
+
+/* --------------------- Tipografias ------------------------------------- */
+
     h1{
         color: white;
         font-family: 'Orbitron', sans-serif;
@@ -75,47 +72,36 @@ a {
 
 /* --------------------- HEADER ------------------------------------- */
 
-/* header {
-    background-color: rgb(26, 29, 54);
-    padding: 1%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-} */
-
 header {
     background-color: rgb(26, 29, 54);
+    padding: 0%;
 }
 
-
-/* header img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+.navbar {
+    padding: 0%;
 }
 
-header li {
-    font-size: 1.5rem;
-} */
- 
+.navbar-brand {
+    width: 50vw;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border: solid 2px white;
+}
+
+.nav-link:hover {
+    background-color: rgb(165, 42, 110); 
+    }
+
+
 header img:hover {
     animation-name: logoEnMovimiento;
     animation-duration:0.6s;
 }
-
 
 @keyframes logoEnMovimiento {
     0% {}
@@ -154,158 +140,6 @@ header img:hover {
 
 
 }
-
-
-
-
-/* --------------------- MAIN ------------------------------------- */
-
-main {
-    background: linear-gradient(to right bottom, rgb(26, 39, 94) 0%, rgba(32,40,75,1) 54%, rgba(42,32,75,1) 100%);
-}
-/* PORTADA */
-
-/* #seccion-portada{
-    padding: 3%;
-    text-align: center;
-    height: auto;
-    overflow: auto;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.portada-texto {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 2%;
-    margin-bottom: 5%;
-
-} */
-
-
-/* NOTICIAS */
-
-/* #seccion-noticias {
-    padding: 3% 5%;
-    text-align: center;
-    height: auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-} */
-
-#seccion-noticias a{
-    font-size: 1.2rem;
-    color: black;
-    overflow: auto;
-    padding: 3%;
-    border: solid 2px black;
-    background-color: blueviolet;
-    border-radius: 20px;
-
-}
-
-.card {
-    background-color: rgb(48, 67, 121);
-}
-
-.card-img-top {
-    width: 100%;
-    height: 18vw;
-    object-fit: cover;
-}
-
-@media (max-width: 576px) {
-
-    .card-img-top {
-        width: 100%;
-        height: 50vw;
-        object-fit: cover;
-    }
-
-}
-
-/* #seccion-noticias p{
-    overflow: visible;
-    margin: 5%;
-} */
-
-#seccion-noticias a:hover {
-   background-color: rgb(165, 42, 110); 
-}
-
-.card-title {
-    color: white;
-}
-
-.card-text {
-    color: white;
-}
-
-/* .contenedor-noticias {
-    display: flex;
-    width: auto;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(49, 55, 100);
-    border: solid 2px black;
-    margin: 3% 0%;
-
-} */
-
-
-
-/* EQUIPOS */
-
-#seccion-equipos {
-    padding: 3%;
-    text-align: center;
-}
-
-#seccion-equipos h2{
-    margin-bottom: 2%;
-}
-
-#seccion-equipos img {
-    margin: 1% 0%;
-}
-
-#seccion-equipos a:hover {
-    transform: scale(1.25);
-    transition-duration: 700ms;
-
-}
-
-.equipos-boton {
-    margin: 3% 0%;
-}
-
-.equipos-boton a{
-    font-size: 1.2rem;
-    color: black;
-    padding: 2%;
-    border: solid 2px black;
-    background-color: blueviolet;
-    border-radius: 20px;
-    
-}
-
-.equipos-boton a:hover {
-   background-color: rgb(165, 42, 110); 
-}
-
-
-
-.imagen-banner {
-    width: 100%;
-}
-
 
 /* --------------------- FOOTER ------------------------------------- */
 
@@ -350,6 +184,112 @@ footer h3 {
 
 
 
+/* --------------------- INDEX.HTML ------------------------------------- */
+
+.card {
+    background-color: rgb(39, 31, 61);
+
+}
+
+.card-img-top {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.card-text-date {
+    color: aqua;
+}
+
+#seccion-noticias a:hover {
+background-color: rgb(165, 42, 110); 
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    color: white;
+}
+
+
+.noticias-boton {
+    margin: 3% 0%;
+    height: auto;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn {
+    font-size: 1.2rem;
+    color: black;
+    padding: 2%;
+    border: solid 2px black;
+    background-color: blueviolet;
+    border-radius: 20px;
+    
+}
+
+.btn:hover {
+    background-color: rgb(165, 42, 110);
+    border: solid 2px black;
+    color: black;
+}
+
+.btn a {
+    color: black;
+}
+
+/* EQUIPOS */
+
+#seccion-equipos {
+    text-align: center;
+}
+
+#seccion-equipos h2{
+    margin-bottom: 2%;
+}
+
+#seccion-equipos img {
+    margin: 1% 0%;
+}
+
+#seccion-equipos a:hover {
+    transform: scale(1.25);
+    transition-duration: 700ms;
+
+}
+
+.equipos-boton {
+    margin: 3% 0%;
+}
+
+.equipos-boton a{
+    font-size: 1.2rem;
+    color: black;
+    padding: 2%;
+    border: solid 2px black;
+    background-color: blueviolet;
+    border-radius: 20px;
+    
+}
+
+.equipos-boton a:hover {
+    background-color: rgb(165, 42, 110); 
+}
+
+
+
+.imagen-banner {
+    width: 100%;
+}
+
+
+
+
+
 
 /* --------------------- TIENDA.HTML ------------------------------------- */
 
@@ -376,51 +316,51 @@ footer h3 {
     padding-bottom: 3%;
     margin: 3% 0%;
 
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-  
+
 .card-producto h3 {
     text-align: center;
 }
-  
+
 .card-producto img {
     width: 100%;
 }
-  
+
 .card-producto p {
     margin: auto;
     text-align: center;
     font-size: 1.5rem;
     margin: 2% 0%;
 }
-  
+
 .card-producto a {
     border: 2px solid black;
     font-size: 1.2rem;
     overflow: auto;
     padding: 2%;
     margin-top: 1%;
-  
+
     background-color: blueviolet;
     color: black;
-  
+
     border-radius: 10px;
 }
-  
+
 .card-producto a:hover {
     background-color: rgb(165, 42, 110);
 }
-  
+
 .contenedor-productos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-  
+
 .contenedor-filtro {
     border: 2px solid black;
     width: auto;
@@ -444,47 +384,34 @@ footer h3 {
 
 /* --------------------- CONTACTO.HTML ------------------------------------- */
 
-/* label {
-    font-size: 1.5rem;
-}
-
-#seccion-formulario {
-    border: solid 3px white;
-    margin: 0% 10%;
-    text-align: center;
-
-}
-
-#seccion-formulario div {
+.btn-contacto {
+    border: 2px solid black;
+    font-size: 1.2rem;
+    overflow: auto;
     padding: 1%;
+    margin-top: 1%;
+
+    background-color: blueviolet;
+    color: black;
+
+    border-radius: 10px;
 }
 
-#seccion-formulario input {
-    width: auto;
-    background-color: rgb(36, 40, 73);
-    padding: 1%;
-    border-radius: 6px;
-    border-color: white;
+.btn-contacto:hover {
+    background-color: rgb(165, 42, 110);
+}
+
+
+
+/* --------------------- EQUIPOS.HTML ------------------------------------- */
+
+.img {
+    object-fit: cover;
+}
+
+.card-title-equipos {
     color: white;
 }
-
-#seccion-formulario textarea {
-    background-color: rgb(36, 40, 73);
-    width: auto;
-    padding: 1%;
-    border-radius: 6px;
-    border-color: white;
-    color: white;
-} */
-
-
-
-
-
-
-
-
-
 
 
 /* --------------------- RESPONSIVE ------------------------------------- */
@@ -492,38 +419,8 @@ footer h3 {
 
 @media (min-width: 760px) {
     
-    /* HEADER */
 
-    /* header {
-        padding: 0,5%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
 
-    header nav {
-        width: 60%;
-    }
-
-    header img {
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 10%;
-    } */
-
-    /* MAIN */
-
-    /* .portada-texto {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    
-    }
-
-    #seccion-portada iframe {
-        width: 90%;
-    } */
 
     .imagenes-equipos {
         display: flex;
@@ -537,146 +434,13 @@ footer h3 {
         width: 25vw;
         margin-bottom: 10%;
 
-
-
     }
-    
-    /* SECCION  TIENDA */
-
-    /* .tienda-productos {
-        margin: auto;
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .card-producto {
-        width: 45vw;
-        margin: 5%;
-        
-    }
-
-    .form-formulario {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, 120px);;
-        grid-template-areas: 
-        "nombre email"
-        "telefono mensaje"
-        ". botones";
-        grid-auto-rows: auto;
-    }
-
-    .formulario-nombre {
-        grid-area: nombre;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-email {
-        grid-area: email;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-telefono {
-        grid-area: telefono;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-mensaje {
-        grid-area: mensaje;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #campo.mensaje {
-        height: fit-content;
-        width: auto;
-    }
-
-    .formulario-botones {
-        grid-area: botones;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-end;
-    } */
-
 
 
 }
 
 
 @media (min-width: 1024px) {
-    
-    /* HEADER */
-
-
-    /* header {
-        padding: 0,5%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header nav {
-        width: 60%;
-    }
-
-    header img {
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 5%;
-    } */
-
-
-    /* MAIN */
-
-    /* .portada-texto {
-        margin:  0% 3% 3%;
-    }
-
-    #seccion-noticias {
-        display: grid;
-        grid-template-rows: 10% 3fr;
-        grid-template-areas:
-        "titulo"
-        "noticia";
-    }
-
-    #seccion-noticias h2 {
-        grid-area: titulo;
-        text-align: center;
-    }
-
-    .ubicacion-noticias {
-        grid-area: noticia;
-
-        display: flex;
-        flex-direction: row;
-    }
-
-    .contenedor-noticias{
-        margin: 3% 3%;
-        width: 45vw;
-    } */
 
     /* TIENDA */
 
@@ -710,77 +474,5 @@ footer h3 {
         font-size: 1.5rem;
         margin-bottom: 5%;
     }
-
-    /* CONTACTO */
-
-    /* label {
-        margin: 2%;
-    }
-
-    input {
-        width: 80%;
-    }
-
-    .form-formulario {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 120px);;
-        grid-template-areas: 
-        "nombre email telefono"
-        "mensaje mensaje mensaje"
-        ". . botones";
-        grid-auto-rows: auto;
-    }
-
-    .formulario-nombre {
-        grid-area: nombre;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-email {
-        grid-area: email;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-telefono {
-        grid-area: telefono;
-        height: fit-content;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .formulario-mensaje {
-        grid-area: mensaje;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    #campo.mensaje {
-        height: fit-content;
-        width: auto;
-    }
-
-    .formulario-botones {
-        grid-area: botones;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-end;
-    } */
-
-
 
 }

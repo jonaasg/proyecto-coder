@@ -15,139 +15,161 @@
 <body>
     
   <!-- -------------------- HEADER ----------------------------->
-  <header>
+  <header class="navbar navbar-expand-lg">
 
-    <img src="../Imagenes/logo2.png" alt="logo">
+    <div class="container">
 
-    <nav>
-        <ul>
-            <li> <a href="../index.html"> Inicio </a></li>
-            <li> <a href="./noticias.html"> Noticias </a></li>
-            <li> <a href="./equipos.html"> Equipos </a></li>
-            <li> <a href="./tienda.html"> Tienda </a></li>
-            <li> <a href="./contacto.html"> Contacto </a></li>
-        </ul>
-    </nav>
+        <a class="navbar-brand" href="../index.html"> <img src="../Imagenes/logo2.png" alt="logo" class="w-25"></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active fs-3 text-light  mx-2" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light  mx-2" href="./noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light mx-2" href="./equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light text-decoration-underline mx-2" href="./tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-3 text-light mx-2" href="./contacto.html">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
 </header>
 
 <!------------------------ MAIN ---------------------------------->
 <main>
 
-    <h2 class="seccion-titulo">Tienda</h2>
+    <section class="container">
 
-    <section id="seccion-tienda">
+        <h2 class="display-4 fw-bold text-center text-lg-start">Tienda</h2>
 
-        <div class="contenedor-filtro">
-            <article>
-                <h3>Categorias</h3>
-                <ul>
-                    <li>Indumentaria</li>
-                    <li>Basics</li>
-                    <li>Accesorios</li>
-                    <li>Gaming</li>
-                    <li>Marcas</li>
-                </ul>
-            </article>
+        <div id="seccion-tienda">
+
+            <div class="contenedor-filtro">
+                <article>
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li>Indumentaria</li>
+                        <li>Basics</li>
+                        <li>Accesorios</li>
+                        <li>Gaming</li>
+                        <li>Marcas</li>
+                    </ul>
+                </article>
 
 
+            </div>
+
+            <div class="tienda-productos">
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta1.png" alt="Camiseta oficial black">
+                        <h3>Camiseta Oficial Black Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta2.png" alt="Camiseta oficial red">
+                        <h3>Camiseta Oficial Red Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta3.png" alt="Camiseta oficial white">
+                        <h3>Camiseta Oficial White Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta4.png" alt="Camiseta oficial orange">
+                        <h3>Camiseta Oficial Orange Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta5.png" alt="Camiseta oficial yellow">
+                        <h3>Camiseta Oficial Yellow Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta6.png" alt="Camiseta oficial green">
+                        <h3>Camiseta Oficial Green Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+                <div class="contenedor-productos">
+
+                    <article class="card-producto">
+
+                        <img src="../Imagenes/camiseta7.png" alt="Camiseta oficial pink">
+                        <h3>Camiseta Oficial Pink Edition</h3>
+
+                        <p>$ 5.000,00</p>
+
+                        <a href="">Comprar</a>
+                    </article>
+                </div>
+
+            </div>
         </div>
-
-        <div class="tienda-productos">
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta1.png" alt="Camiseta oficial black">
-                    <h3>Camiseta Oficial Black Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta2.png" alt="Camiseta oficial red">
-                    <h3>Camiseta Oficial Red Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta3.png" alt="Camiseta oficial white">
-                    <h3>Camiseta Oficial White Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta4.png" alt="Camiseta oficial orange">
-                    <h3>Camiseta Oficial Orange Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta5.png" alt="Camiseta oficial yellow">
-                    <h3>Camiseta Oficial Yellow Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta6.png" alt="Camiseta oficial green">
-                    <h3>Camiseta Oficial Green Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-            <div class="contenedor-productos">
-
-                <article class="card-producto">
-
-                    <img src="../Imagenes/camiseta7.png" alt="Camiseta oficial pink">
-                    <h3>Camiseta Oficial Pink Edition</h3>
-
-                    <p>$ 5.000,00</p>
-
-                    <a href="">Comprar</a>
-                </article>
-            </div>
-
-        </div>
-
     </section>
 
 
@@ -168,11 +190,11 @@
         <section id="footer-links">
             <h3>Furious Gaming</h3>
             <ul>
-                <li> <a href="./index.html"> Inicio </a></li>
-                <li> <a href="./pages/noticias.html"> Noticias </a></li>
-                <li> <a href="./pages/equipos.html"> Equipo </a></li>
-                <li> <a href="./pages/tienda.html"> Tienda </a></li>
-                <li> <a href="./pages/contacto.html"> Contacto </a></li>
+                <li> <a href="../index.html"> Inicio </a></li>
+                <li> <a href="./noticias.html"> Noticias </a></li>
+                <li> <a href="./equipos.html"> Equipo </a></li>
+                <li> <a href="./tienda.html"> Tienda </a></li>
+                <li> <a href="./contacto.html"> Contacto </a></li>
             </ul>
         </section>
 
