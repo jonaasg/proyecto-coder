@@ -14,10 +14,11 @@
     color: aqua;
 }
 
-#seccion-noticias a:hover {
+#seccion-noticias a {
+    &:hover {
 background-color: $color-hover; 
     }
-
+}
 
 .card-title {
     color: white;
@@ -53,11 +54,12 @@ background-color: $color-hover;
     margin: 1% 0%;
 }
 
-#seccion-equipos a:hover {
+#seccion-equipos a {
+    &:hover {
     transform: scale(1.25);
     transition-duration: 700ms;
     }
-
+}
 
 .equipos-boton {
     margin: 3% 0%;
@@ -73,10 +75,11 @@ background-color: $color-hover;
     
 }
 
-.equipos-boton a:hover {
+.equipos-boton a {
+    &:hover {
     background-color: $color-hover; 
     }
-
+}
 
 
 

@@ -58,8 +58,10 @@
     border-radius: 10px;
 }
 
-.card-producto a:hover {
+.card-producto a {
+    &:hover {
     background-color: rgb(165, 42, 110);
+}
 }
 
 .contenedor-productos {
@@ -83,10 +85,11 @@
     padding: 4px;
 }
 
-.contenedor-filtro li:hover {
+.contenedor-filtro li {
+    &:hover {
     background-color: rgb(165, 42, 110);
     }
-
+}
 
 @media (min-width: 1024px) {
 

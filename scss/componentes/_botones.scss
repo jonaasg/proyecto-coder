@@ -10,12 +10,13 @@
     
 }
 
-.btn:hover {
+.btn {
+    &:hover {
         background-color: $color-hover;
         border: solid 2px black;
         color: black;
     }
-
+}
 
 
 .btn a {

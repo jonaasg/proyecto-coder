@@ -13,6 +13,8 @@
     border-radius: 10px;
 }
 
-.btn-contacto:hover {
+.btn-contacto {
+    &:hover {
     background-color: $color-hover;
     }
+}

@@ -21,15 +21,18 @@ header {
     border: solid 2px white;
 }
 
-.nav-link:hover {
+.nav-link { 
+    &:hover {
         background-color: $color-hover; 
         }
+    }
 
 
-
-header img:hover {
+header img {
+    &:hover {
     animation-name: logoEnMovimiento;
     animation-duration:0.6s;
+}
 }
 
 @keyframes logoEnMovimiento {
