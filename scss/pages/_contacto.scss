@@ -1,0 +1,18 @@
+/* --------------------- CONTACTO.HTML ------------------------------------- */
+
+.btn-contacto {
+    border: 2px solid black;
+    font-size: 1.2rem;
+    overflow: auto;
+    padding: 1%;
+    margin-top: 1%;
+
+    background-color: $color-botones;
+    color: black;
+
+    border-radius: 10px;
+}
+
+.btn-contacto:hover {
+    background-color: $color-hover;
+    }
