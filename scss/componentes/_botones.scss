@@ -8,17 +8,27 @@
     background-color: $color-botones;
     border-radius: 20px;
     
-}
-
-.btn {
     &:hover {
         background-color: $color-hover;
         border: solid 2px black;
         color: black;
     }
+
+    a {
+        color: black;
+    }
+
 }
 
+.btn-desactivado {
+    @extend .btn;
+    background-color: rgb(158, 158, 158);
+    color: rgb(48, 48, 48);
+    border: solid 2px rgb(48, 48, 48);
 
-.btn a {
-    color: black;
+    &:hover {
+        background-color: rgb(158, 158, 158);
+        color: rgb(48, 48, 48);
+        border: solid 2px rgb(48, 48, 48);
+    }
 }

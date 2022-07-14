@@ -1,3 +1,38 @@
+.letra-chica {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.letra-mediana {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.letra-grande {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.icono-facebook {
+  color: #1877F2;
+}
+
+.icono-instagram {
+  color: #FF0174;
+}
+
+.icono-tiktok {
+  color: rgb(0, 0, 0);
+}
+
+.icono-twitter {
+  color: #1D9BF0;
+}
+
+.icono-youtube {
+  color: #FF0000;
+}
+
 /* --------------------- RESETEO CSS ------------------------------------- */
 * {
   margin: 0;
@@ -150,7 +185,7 @@ footer h3 {
 }
 
 /* --------------------- BOTONES ------------------------------------- */
-.btn {
+.btn, .btn-desactivado {
   font-size: 1.2rem;
   color: black;
   padding: 2%;
@@ -158,15 +193,24 @@ footer h3 {
   background-color: blueviolet;
   border-radius: 20px;
 }
-
-.btn:hover {
+.btn:hover, .btn-desactivado:hover {
   background-color: rgb(165, 42, 110);
   border: solid 2px black;
   color: black;
 }
-
-.btn a {
+.btn a, .btn-desactivado a {
   color: black;
+}
+
+.btn-desactivado {
+  background-color: rgb(158, 158, 158);
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb(48, 48, 48);
+}
+.btn-desactivado:hover {
+  background-color: rgb(158, 158, 158);
+  color: rgb(48, 48, 48);
+  border: solid 2px rgb(48, 48, 48);
 }
 
 /* --------------------- INDEX.HTML ------------------------------------- */
@@ -323,21 +367,6 @@ footer h3 {
   text-align: center;
   font-size: 1.5rem;
   margin: 2% 0%;
-}
-
-.card-producto a {
-  border: 2px solid black;
-  font-size: 1.2rem;
-  overflow: auto;
-  padding: 2%;
-  margin-top: 1%;
-  background-color: blueviolet;
-  color: black;
-  border-radius: 10px;
-}
-
-.card-producto a:hover {
-  background-color: rgb(165, 42, 110);
 }
 
 .contenedor-productos {
