@@ -9,16 +9,25 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    li {
+        margin: 5% 0%;
+        &:hover {
+            background-color: $color-hover;
+        }
+    }
+
+    ul {
+        padding: 0%;
+    }
+
+
+    h3 {
+        font-size: 1.6rem;
+    }   
 }
 
-footer li{
-    margin: 2% 0%;
-}
-
-footer h3 {
-    font-size: 1.6rem;
-}   
 
 #footer-links {
     height: auto;
@@ -28,6 +37,7 @@ footer h3 {
     flex-direction: column;
     align-content: space-around;
 }
+
 
 
 
