@@ -4,11 +4,12 @@
 footer {
     background-color: $color-principal;
     padding: 3%;
+    padding-bottom: 0%;
     height: auto;
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     li {
@@ -25,13 +26,14 @@ footer {
 
     h3 {
         font-size: 1.6rem;
+        padding: 0%;
     }   
 }
 
 
+
 #footer-links {
-    height: auto;
-    width: 40vw;
+    width: 35vw;
 
     display: flex;
     flex-direction: column;
@@ -42,9 +44,25 @@ footer {
 
 
 #footer-redes {
-    height: auto;
-    width: 40%;
+    width: 50vw;
+
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    justify-content: flex-start;
+
+    i {
+    font-size: 2rem;
+    }
+
+    
+}
+
+.iconos-redes {
+    margin-top: 5%;
+
+
+    i {
+        margin-right: 10%;
+    }
+
 }

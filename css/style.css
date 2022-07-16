@@ -13,23 +13,23 @@
   font-weight: 600;
 }
 
-.icono-facebook {
+.bi-facebook {
   color: #1877F2;
 }
 
-.icono-instagram {
+.bi-instagram {
   color: #FF0174;
 }
 
-.icono-tiktok {
+.bi-tiktok {
   color: rgb(0, 0, 0);
 }
 
-.icono-twitter {
+.bi-twitter {
   color: #1D9BF0;
 }
 
-.icono-youtube {
+.bi-youtube {
   color: #FF0000;
 }
 
@@ -172,10 +172,11 @@ header img:hover {
 footer {
   background-color: rgb(39, 31, 61);
   padding: 3%;
+  padding-bottom: 0%;
   height: auto;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 footer li {
@@ -189,22 +190,31 @@ footer ul {
 }
 footer h3 {
   font-size: 1.6rem;
+  padding: 0%;
 }
 
 #footer-links {
-  height: auto;
-  width: 40vw;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   align-content: space-around;
 }
 
 #footer-redes {
-  height: auto;
-  width: 40%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  justify-content: flex-start;
+}
+#footer-redes i {
+  font-size: 2rem;
+}
+
+.iconos-redes {
+  margin-top: 5%;
+}
+.iconos-redes i {
+  margin-right: 10%;
 }
 
 /* --------------------- BOTONES ------------------------------------- */

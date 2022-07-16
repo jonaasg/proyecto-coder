@@ -6,22 +6,22 @@ $redes: (
     youtube: #FF0000,
 );
 
-.icono-facebook {
+.bi-facebook {
     color: map-get($redes, facebook);
 }
 
-.icono-instagram {
+.bi-instagram {
     color: map-get($redes, instagram);
 }
 
-.icono-tiktok {
+.bi-tiktok {
     color: map-get($redes, tiktok);
 }
 
-.icono-twitter {
+.bi-twitter {
     color: map-get($redes, twitter);
 }
 
-.icono-youtube {
+.bi-youtube {
     color: map-get($redes, youtube);
 }
