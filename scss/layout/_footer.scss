@@ -3,20 +3,21 @@
 
 footer {
     background-color: $color-principal;
-    padding: 3%;
-    padding-bottom: 0%;
+    padding: 3% 3% 0% 3%;
     height: auto;
 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 
     li {
         margin: 5% 0%;
-        &:hover {
-            background-color: $color-hover;
+        a {
+            &:hover {
+                background-color: $color-hover;
         }
+    }
     }
 
     ul {
@@ -33,36 +34,35 @@ footer {
 
 
 #footer-links {
-    width: 35vw;
-
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
+    width: 40vw;
 }
-
-
 
 
 #footer-redes {
-    width: 50vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 40vw;
 
     i {
     font-size: 2rem;
+    margin: 10px;
     }
 
+    .iconos-redes {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+    }
     
 }
 
-.iconos-redes {
-    margin-top: 5%;
-
-
-    i {
-        margin-right: 10%;
-    }
+@media (min-width: 768px) {
 
 }
