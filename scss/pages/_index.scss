@@ -14,12 +14,6 @@
     color: aqua;
 }
 
-#seccion-noticias a {
-    &:hover {
-background-color: $color-hover; 
-    }
-}
-
 .card-title {
     color: white;
 }
@@ -27,6 +21,16 @@ background-color: $color-hover;
 .card-text {
     color: white;
 }
+
+
+
+#seccion-noticias a {
+    &:hover {
+background-color: $color-hover; 
+    }
+}
+
+
 
 
 .noticias-boton {
@@ -44,43 +48,44 @@ background-color: $color-hover;
 
 #seccion-equipos {
     text-align: center;
-}
 
-#seccion-equipos h2{
-    margin-bottom: 2%;
-}
-
-#seccion-equipos img {
-    margin: 1% 0%;
-}
-
-#seccion-equipos a {
-    &:hover {
-    transform: scale(1.25);
-    transition-duration: 700ms;
+    h2{
+        margin-bottom: 2%;
     }
+
+    img {
+        margin: 1% 0%;
+    }
+
+    a {
+        &:hover {
+        transform: scale(1.25);
+        transition-duration: 700ms;
+        }
+    }
+
 }
 
 .equipos-boton {
     margin: 3% 0%;
-}
 
-.equipos-boton a{
-    font-size: 1.2rem;
-    color: black;
-    padding: 2%;
-    border: solid 2px black;
-    background-color: $color-botones;
-    border-radius: 20px;
-    
-}
-
-.equipos-boton a {
-    &:hover {
-    background-color: $color-hover; 
+    a{
+        font-size: 1.2rem;
+        color: black;
+        padding: 2%;
+        border: solid 2px black;
+        background-color: $color-botones;
+        border-radius: 20px;
+        
     }
-}
 
+    a {
+        &:hover {
+        background-color: $color-hover; 
+        }
+    }
+
+}
 
 
 .imagen-banner {

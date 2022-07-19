@@ -18,7 +18,8 @@
 }
 
 .card-producto {
-    border: solid 2px black;
+    border: solid 1px black;
+    background-color: $color-principal;
     width: auto;
     padding-bottom: 3%;
     margin: 3% 0%;
@@ -28,23 +29,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.card-producto h3 {
-    text-align: center;
-}
+    h3 {
+        text-align: center;
+    }
 
-.card-producto img {
-    width: 100%;
-}
+    p {
+        margin: auto;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 2% 0%;
+    }
 
-.card-producto p {
-    margin: auto;
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 2% 0%;
-}
+    img {
+        width: 100%;
+    }
 
+}
 
 .contenedor-productos {
     display: flex;
@@ -53,25 +54,25 @@
 }
 
 .contenedor-filtro {
-    border: 2px solid black;
+    border: 1px solid black;
     width: auto;
+    
 
-}
-
-.contenedor-filtro h3 {
-    padding: 1%;
-    background-color: rgb(95, 17, 168);
-}
-
-.contenedor-filtro li {
-    padding: 4px;
-}
-
-.contenedor-filtro li {
-    &:hover {
-    background-color: rgb(165, 42, 110);
+    h3 {
+        padding: 1%;
+        background-color: $color-botones;
     }
+
+    li {
+        padding: 4px;
+
+        &:hover {
+            background-color: $color-hover;
+            }
+    }
+
 }
+
 
 @media (min-width: 1024px) {
 

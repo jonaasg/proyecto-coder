@@ -62,9 +62,15 @@ h3 {
   padding: 1%;
 }
 
-p, li, label {
+li {
   color: white;
   font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+}
+
+p, label {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -203,7 +209,8 @@ footer h3 {
   font-size: 2rem;
   margin: 10px;
 }
-#footer-redes .iconos-redes {
+
+.iconos-redes {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
@@ -211,7 +218,7 @@ footer h3 {
   flex-wrap: wrap;
 }
 @media (min-width: 768px) {
-  #footer-redes .iconos-redes {
+  .iconos-redes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -261,16 +268,16 @@ footer h3 {
   color: aqua;
 }
 
-#seccion-noticias a:hover {
-  background-color: rgb(165, 42, 110);
-}
-
 .card-title {
   color: white;
 }
 
 .card-text {
   color: white;
+}
+
+#seccion-noticias a:hover {
+  background-color: rgb(165, 42, 110);
 }
 
 .noticias-boton {
@@ -286,15 +293,12 @@ footer h3 {
 #seccion-equipos {
   text-align: center;
 }
-
 #seccion-equipos h2 {
   margin-bottom: 2%;
 }
-
 #seccion-equipos img {
   margin: 1% 0%;
 }
-
 #seccion-equipos a:hover {
   transform: scale(1.25);
   transition-duration: 700ms;
@@ -303,7 +307,6 @@ footer h3 {
 .equipos-boton {
   margin: 3% 0%;
 }
-
 .equipos-boton a {
   font-size: 1.2rem;
   color: black;
@@ -312,7 +315,6 @@ footer h3 {
   background-color: blueviolet;
   border-radius: 20px;
 }
-
 .equipos-boton a:hover {
   background-color: rgb(165, 42, 110);
 }
@@ -336,6 +338,21 @@ footer h3 {
   }
 }
 /* --------------------- CONTACTO.HTML ------------------------------------- */
+.contenedor-oficinas {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 997px) {
+  .contenedor-oficinas {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
 .btn-contacto {
   border: 2px solid black;
   font-size: 1.2rem;
@@ -378,7 +395,8 @@ footer h3 {
 }
 
 .card-producto {
-  border: solid 2px black;
+  border: solid 1px black;
+  background-color: rgb(39, 31, 61);
   width: auto;
   padding-bottom: 3%;
   margin: 3% 0%;
@@ -387,20 +405,17 @@ footer h3 {
   justify-content: center;
   align-items: center;
 }
-
 .card-producto h3 {
   text-align: center;
 }
-
-.card-producto img {
-  width: 100%;
-}
-
 .card-producto p {
   margin: auto;
   text-align: center;
   font-size: 1.5rem;
   margin: 2% 0%;
+}
+.card-producto img {
+  width: 100%;
 }
 
 .contenedor-productos {
@@ -410,19 +425,16 @@ footer h3 {
 }
 
 .contenedor-filtro {
-  border: 2px solid black;
+  border: 1px solid black;
   width: auto;
 }
-
 .contenedor-filtro h3 {
   padding: 1%;
-  background-color: rgb(95, 17, 168);
+  background-color: blueviolet;
 }
-
 .contenedor-filtro li {
   padding: 4px;
 }
-
 .contenedor-filtro li:hover {
   background-color: rgb(165, 42, 110);
 }
