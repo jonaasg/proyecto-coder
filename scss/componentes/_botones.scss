@@ -1,9 +1,38 @@
 /* --------------------- BOTONES ------------------------------------- */
 
-.btn {
-    font-size: 1.2rem;
+// .btn {
+//     font-size: 1.2rem;
+//     color: rgb(0, 220, 207);
+//     padding: 2%;
+//     border: solid 2px rgb(0, 220, 207);
+//     background-color: transparent;
+//     border-radius: 20px;
+//     box-shadow: 0px 0px 20px 2px rgba(0, 220, 205, 0.404);
+    
+    
+//     &:hover {
+//         background-color: rgb(0, 220, 207);
+//         border: solid 2px rgb(0, 220, 207);
+//         box-shadow: 0px 0px 40px 2px rgba(0, 220, 205, 0.822);
+//         transition: 0.5s;
+
+//         a {
+//             color: rgb(255, 255, 255);
+//             font-weight: 600;
+            
+//         }
+
+
+//     }
+
+
+// }
+
+.boton {
+    font-size: 1.4rem;
     color: rgb(0, 220, 207);
-    padding: 2%;
+    font-weight: 600;
+    padding: 10px 20px;
     border: solid 2px rgb(0, 220, 207);
     background-color: transparent;
     border-radius: 20px;
@@ -15,24 +44,15 @@
         border: solid 2px rgb(0, 220, 207);
         box-shadow: 0px 0px 40px 2px rgba(0, 220, 205, 0.822);
         transition: 0.5s;
+        color: rgb(255, 255, 255);
+        
 
-        a {
-            color: rgb(255, 255, 255);
-            font-weight: 600;
-        }
-
-
-    }
-
-    a {
-        color: rgb(0, 220, 207);
-        font-weight: 600;
     }
 
 }
 
 .btn-desactivado {
-    @extend .btn;
+    @extend .boton;
     background-color: rgb(158, 158, 158);
     color: rgb(48, 48, 48);
     border: solid 2px rgb(48, 48, 48);

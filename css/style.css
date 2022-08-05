@@ -44,13 +44,16 @@
 h1 {
   color: white;
   font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
   font-weight: 800;
   padding: 1%;
+  text-align: center;
 }
 
 h2 {
   color: white;
   font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
   font-weight: 600;
   padding: 1%;
 }
@@ -58,6 +61,7 @@ h2 {
 h3 {
   color: white;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
   font-weight: 600;
   padding: 1%;
 }
@@ -65,12 +69,14 @@ h3 {
 li {
   color: white;
   font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 p, label {
   color: white;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -88,7 +94,6 @@ li {
 
 /* --------------------- IMAGENES ------------------------------------- */
 img {
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -226,28 +231,22 @@ footer h3 {
 }
 
 /* --------------------- BOTONES ------------------------------------- */
-.btn, .btn-desactivado {
-  font-size: 1.2rem;
+.boton, .btn-desactivado {
+  font-size: 1.4rem;
   color: rgb(0, 220, 207);
-  padding: 2%;
+  font-weight: 600;
+  padding: 10px 20px;
   border: solid 2px rgb(0, 220, 207);
   background-color: transparent;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 2px rgba(0, 220, 205, 0.404);
 }
-.btn:hover, .btn-desactivado:hover {
+.boton:hover, .btn-desactivado:hover {
   background-color: rgb(0, 220, 207);
   border: solid 2px rgb(0, 220, 207);
   box-shadow: 0px 0px 40px 2px rgba(0, 220, 205, 0.822);
   transition: 0.5s;
-}
-.btn:hover a, .btn-desactivado:hover a {
   color: rgb(255, 255, 255);
-  font-weight: 600;
-}
-.btn a, .btn-desactivado a {
-  color: rgb(0, 220, 207);
-  font-weight: 600;
 }
 
 .btn-desactivado {
@@ -269,8 +268,25 @@ footer h3 {
   align-content: center;
   justify-content: space-around;
 }
+#hero-section h1 {
+  margin: 5%;
+}
+#hero-section p {
+  font-size: 1.1rem;
+  margin: 0% 5% 5%;
+}
+@media (min-width: 996px) {
+  #hero-section p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-section p {
+    font-size: 1.5rem;
+  }
+}
 #hero-section iframe {
-  box-shadow: 0px 0px 50px 20px rgba(253, 187, 45, 0.404);
+  box-shadow: 0px 0px 100px rgba(253, 187, 45, 0.404);
 }
 @media (min-width: 768px) {
   #hero-section iframe {
@@ -290,46 +306,21 @@ footer h3 {
     height: 438px;
   }
 }
-#hero-section h1 {
-  padding: 5%;
-}
-#hero-section p {
-  font-size: 1.1rem;
-  padding: 0% 5% 5%;
-}
-@media (min-width: 996px) {
-  #hero-section p {
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1200px) {
-  #hero-section p {
-    font-size: 1.5rem;
-  }
-}
 
-.nav-image {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .nav-image {
-    width: 80%;
-  }
-}
-@media (min-width: 996px) {
-  .nav-image {
-    width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .nav-image {
-    width: 50%;
-  }
+#seccion-noticias {
+  padding: 5% 0%;
 }
 
 .card {
   background-color: rgb(12, 10, 32);
   border: 2px solid red;
+  box-shadow: 0px 0px 30px rgba(253, 45, 45, 0.404);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .card-img-top {
@@ -338,7 +329,8 @@ footer h3 {
 }
 
 .card-text-date {
-  color: aqua;
+  color: red;
+  text-align: end;
 }
 
 .card-title {
@@ -349,51 +341,69 @@ footer h3 {
   color: white;
 }
 
-#seccion-noticias a:hover {
-  background-color: rgb(165, 42, 110);
+/* EQUIPOS */
+#seccion-equipos {
+  padding: 0% 0% 5% 0%;
+  text-align: center;
 }
-
-.noticias-boton {
-  margin: 3% 0%;
-  height: auto;
-  width: 30vw;
+#seccion-equipos .imagenes-equipos {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
 }
+#seccion-equipos .imagenes-equipos img {
+  width: 60%;
+  margin: 4%;
+}
+#seccion-equipos .imagenes-equipos img:hover {
+  transform: scale(1.1);
+  transition-duration: 100ms;
+}
+@media (min-width: 996px) {
+  #seccion-equipos .imagenes-equipos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+  }
+  #seccion-equipos .imagenes-equipos a {
+    width: 30%;
+  }
+}
 
-/* EQUIPOS */
-#seccion-equipos {
+#seccion-sponsors {
+  padding: 0% 0% 5% 0%;
   text-align: center;
 }
-#seccion-equipos h2 {
-  margin-bottom: 2%;
+#seccion-sponsors .imagenes-sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
-#seccion-equipos img {
-  margin: 1% 0%;
+#seccion-sponsors .imagenes-sponsors img {
+  width: 60%;
+  margin: 4%;
 }
-#seccion-equipos a:hover {
-  transform: scale(1.25);
-  transition-duration: 700ms;
+#seccion-sponsors .imagenes-sponsors img:hover {
+  transform: scale(1.1);
+  transition-duration: 100ms;
 }
-
-.equipos-boton {
-  margin: 3% 0%;
-}
-.equipos-boton a {
-  font-size: 1.2rem;
-  color: black;
-  padding: 2%;
-  border: solid 2px black;
-  background-color: blueviolet;
-  border-radius: 20px;
-}
-.equipos-boton a:hover {
-  background-color: rgb(165, 42, 110);
-}
-
-.imagen-banner {
-  width: 100%;
+@media (min-width: 996px) {
+  #seccion-sponsors .imagenes-sponsors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: center;
+  }
+  #seccion-sponsors .imagenes-sponsors a {
+    width: 30%;
+  }
 }
 
 /* --------------------- RESPONSIVE INDEX.HTML------------------------------------- */
@@ -432,7 +442,7 @@ footer h3 {
   overflow: auto;
   padding: 1%;
   margin-top: 1%;
-  background-color: blueviolet;
+  background-color: rgba(0, 220, 205, 0.404);
   color: black;
   border-radius: 10px;
 }
@@ -446,8 +456,46 @@ footer h3 {
   object-fit: cover;
 }
 
+.pepito {
+  height: 10%;
+}
+
 .card-title-equipos {
   color: white;
+}
+
+.equipos-contenedor {
+  height: auto;
+  border: 2px solid rgb(12, 10, 32);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(118, 45, 253, 0.404);
+  background-color: rgb(12, 10, 32);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.equipos-contenedor img {
+  width: 50%;
+  margin: 0%;
+}
+
+.equipos-juegos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipos-jugadores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#pagina-noticias {
+  padding: 2% 0%;
 }
 
 /* --------------------- TIENDA.HTML ------------------------------------- */
@@ -503,7 +551,7 @@ footer h3 {
 }
 .contenedor-filtro h3 {
   padding: 1%;
-  background-color: blueviolet;
+  background-color: rgba(0, 220, 205, 0.404);
 }
 .contenedor-filtro li {
   padding: 4px;
