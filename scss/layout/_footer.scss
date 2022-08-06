@@ -16,6 +16,9 @@ footer {
         a {
             &:hover {
                 background-color: $color-hover;
+                color: white;
+                border-radius: 15px;
+                padding: 2%;
         }
     }
     }
@@ -54,6 +57,13 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    a {
+        &:hover {
+            transform: scale(1.4);
+            transition-duration: 100ms;
+    }
+    }
 
         @media (min-width: 768px) {
             display: flex;

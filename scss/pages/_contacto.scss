@@ -1,35 +1,23 @@
 /* --------------------- CONTACTO.HTML ------------------------------------- */
 
+
 .contenedor-oficinas {
-    padding: 1%;
+    border: 2px solid $color-principal;
+    padding: 2% 0%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 220, 207);
+    background-color: $color-principal;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 997px) {
+    @media (min-width: 996px) {
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
-}
 
-
-.btn-contacto {
-    border: 2px solid black;
-    font-size: 1.2rem;
-    overflow: auto;
-    padding: 1%;
-    margin-top: 1%;
-
-    background-color: $color-botones;
-    color: black;
-
-    border-radius: 10px;
-}
-
-.btn-contacto {
-    &:hover {
-    background-color: $color-hover;
-    }
 }

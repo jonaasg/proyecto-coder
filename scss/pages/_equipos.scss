@@ -1,22 +1,15 @@
 /* --------------------- EQUIPOS.HTML ------------------------------------- */
 
-.img {
-    object-fit: cover;
-}
-
-.pepito {
-    height: 10%;
-}
-
-.card-title-equipos {
-    color: white;
+h2 {
+    padding-top: 3%;
 }
 
 .equipos-contenedor {
-    height: auto;
     border: 2px solid $color-principal;
+    padding: 2% 0%;
+    margin: 2%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(118, 45, 253, 0.404);
+    box-shadow: 0px 0px 20px rgb(0, 220, 207);
     background-color: $color-principal;
     display: flex;
     flex-direction: column;
@@ -27,15 +20,23 @@
     img {
         width: 50%;
         margin: 0%;
+
     }
+
+    @media (min-width: 996px) {
+        img {
+            width: 20%;
+            height: 10%;
+            margin: 0%;
+        }
+    }
+
 
 }
 
 .equipos-juegos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+
 }
 
 .equipos-jugadores {
@@ -43,4 +44,56 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
+    .foto-jugadores {
+        margin: 3%;
+
+            &:hover {
+                transform: scale(1.2);
+                transition-duration: 100ms;
+            } 
+        
+    }
+
+    @media (min-width: 996px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+    .foto-jugadores {
+            width: 10%;
+            
+        }
+    }
+
+    }
+
+.banner-equipos {
+    width: 100%;
+    margin-top: 2%;
+    background-image: url(../../Imagenes/fondogamer4.jpg);
+    background-size: cover;
+    background-repeat: none;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        margin: 0;
+        padding-right: 5%;
+        width: 20%;
+    }
+    p {
+        margin: 0%;
+        font-size: 60px;
+        padding: 10% 0%;
+    }
+    
+
 }
+
+

@@ -1,7 +1,7 @@
 /* --------------------- HEADER ------------------------------------- */
 
 header {
-    background-color: rgb(12, 10, 32);
+    background-color: $color-principal;
     padding: 0%;
 
 }
@@ -25,6 +25,8 @@ header {
 .nav-link { 
     &:hover {
         background-color: $color-hover;
+        border-radius: 15px;
+        transition-duration: 100ms;
         }
     }
 
