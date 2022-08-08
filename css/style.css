@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* --------------------- VARIABLES ------------------------------------- */ /* --------------------- MAPS ------------------------------------- */
 .bi-facebook {
   color: #1877F2;
@@ -26,7 +27,7 @@
   box-sizing: border-box;
 }
 
-/* --------------------- Tipografias ------------------------------------- */
+/* --------------------- TIPOGRAFÍAS ------------------------------------- */
 h1 {
   color: white;
   font-family: "Orbitron", sans-serif;
@@ -301,6 +302,35 @@ footer h3 {
   color: white;
 }
 
+/* --------------------- BANNER ------------------------------------- */
+.banner-secciones {
+  width: 100%;
+  margin-top: 2%;
+  background-image: url(../../Imagenes/fondogamer4.jpg);
+  background-size: cover;
+  background-repeat: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.banner-secciones img {
+  margin: 0;
+  padding-right: 5%;
+  width: 20%;
+}
+.banner-secciones p {
+  margin: 0%;
+  padding: 10% 0%;
+  font-size: 3rem;
+}
+@media (min-width: 996px) {
+  .banner-secciones p {
+    font-size: 60px;
+  }
+}
+
 /* --------------------- INDEX.HTML ------------------------------------- */
 #hero-section {
   height: 90vh;
@@ -529,10 +559,16 @@ h2 {
 }
 .banner-equipos p {
   margin: 0%;
-  font-size: 60px;
   padding: 10% 0%;
+  font-size: 3rem;
+}
+@media (min-width: 996px) {
+  .banner-equipos p {
+    font-size: 60px;
+  }
 }
 
+/* --------------------- NOTICIAS.HTML ------------------------------------- */
 #pagina-noticias {
   padding: 2% 0%;
 }

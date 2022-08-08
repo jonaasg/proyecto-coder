@@ -87,10 +87,15 @@ h2 {
         padding-right: 5%;
         width: 20%;
     }
+
     p {
         margin: 0%;
-        font-size: 60px;
         padding: 10% 0%;
+        font-size: 3rem;
+
+        @media (min-width: 996px) {
+        font-size: 60px;
+        }
     }
     
 
