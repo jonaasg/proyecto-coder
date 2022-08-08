@@ -1,18 +1,3 @@
-.letra-chica {
-  font-size: 1rem;
-  font-weight: 100;
-}
-
-.letra-mediana {
-  font-size: 1.2rem;
-  font-weight: 200;
-}
-
-.letra-grande {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
 .bi-facebook {
   color: #1877F2;
 }
@@ -62,6 +47,14 @@ h3 {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 600;
+  padding: 1%;
+}
+
+h4 {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 1%;
 }
@@ -240,33 +233,35 @@ footer h3 {
 }
 
 /* --------------------- BOTONES ------------------------------------- */
-.boton, .btn-desactivado {
+.boton, .boton-desactivado {
   font-size: 1.4rem;
   color: rgb(0, 220, 207);
   font-weight: 600;
   padding: 10px 20px;
-  border: solid 2px rgb(0, 220, 207);
+  border: solid 2px rgb(0, 220, 205);
   background-color: transparent;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 2px rgba(0, 220, 205, 0.404);
 }
-.boton:hover, .btn-desactivado:hover {
-  background-color: rgb(0, 220, 207);
-  border: solid 2px rgb(0, 220, 207);
+.boton:hover, .boton-desactivado:hover {
+  background-color: rgb(0, 220, 205);
+  border: solid 2px rgb(0, 220, 205);
   box-shadow: 0px 0px 40px 2px rgba(0, 220, 205, 0.822);
   transition: 0.5s;
   color: rgb(255, 255, 255);
 }
 
-.btn-desactivado {
-  background-color: rgb(158, 158, 158);
-  color: rgb(48, 48, 48);
-  border: solid 2px rgb(48, 48, 48);
+.boton-desactivado {
+  background-color: transparent;
+  color: rgb(219, 202, 202);
+  border: solid 2px rgb(219, 202, 202);
+  box-shadow: none;
 }
-.btn-desactivado:hover {
-  background-color: rgb(158, 158, 158);
-  color: rgb(48, 48, 48);
-  border: solid 2px rgb(48, 48, 48);
+.boton-desactivado:hover {
+  background-color: transparent;
+  color: rgb(219, 202, 202);
+  border: solid 2px rgb(219, 202, 202);
+  box-shadow: none;
 }
 
 /* --------------------- INDEX.HTML ------------------------------------- */
@@ -295,7 +290,7 @@ footer h3 {
   }
 }
 #hero-section iframe {
-  box-shadow: 0px 0px 100px rgba(253, 187, 45, 0.404);
+  box-shadow: 0px 0px 100px rgba(0, 220, 205, 0.404);
 }
 @media (min-width: 768px) {
   #hero-section iframe {
@@ -435,7 +430,7 @@ footer h3 {
   padding: 2% 0%;
   margin: 2%;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgb(0, 220, 207);
+  box-shadow: 0px 0px 20px rgb(0, 220, 205);
   background-color: rgb(12, 10, 32);
   display: flex;
   flex-direction: column;
@@ -457,7 +452,7 @@ h2 {
 }
 
 .equipos-contenedor {
-  border: 2px solid rgb(12, 10, 32);
+  border: 2px solid rgb(0, 220, 207);
   padding: 2% 0%;
   margin: 2%;
   border-radius: 10px;
@@ -537,28 +532,20 @@ h2 {
 }
 
 /* --------------------- TIENDA.HTML ------------------------------------- */
-.seccion-titulo {
-  text-align: center;
-  padding-top: 3%;
-}
-
 #seccion-tienda {
-  padding: 3%;
   text-align: center;
-  height: auto;
-  width: auto;
-  overflow: auto;
+  padding: 3% 0%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .card-producto {
-  border: solid 1px black;
   background-color: rgb(12, 10, 32);
-  width: auto;
+  border: 2px solid rgb(0, 220, 207);
+  box-shadow: 0px 0px 30px rgba(0, 220, 205, 0.404);
   padding-bottom: 3%;
-  margin: 3% 0%;
+  margin: 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -571,7 +558,7 @@ h2 {
   margin: auto;
   text-align: center;
   font-size: 1.5rem;
-  margin: 2% 0%;
+  margin: 2% 0% 5% 0%;
 }
 .card-producto img {
   width: 100%;
@@ -584,12 +571,12 @@ h2 {
 }
 
 .contenedor-filtro {
-  border: 1px solid black;
+  border: 2px solid rgb(0, 220, 205);
   width: auto;
 }
 .contenedor-filtro h3 {
   padding: 1%;
-  background-color: rgba(0, 220, 205, 0.404);
+  background-color: rgb(12, 10, 32);
 }
 .contenedor-filtro li {
   padding: 4px;
@@ -598,16 +585,36 @@ h2 {
   background-color: rgb(0, 220, 205);
 }
 
+.contenedor-titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3% 2%;
+}
+.contenedor-titulo .titulo-iconos {
+  width: 200px;
+}
+.contenedor-titulo .titulo-iconos .bi-funnel, .contenedor-titulo .titulo-iconos .bi-search, .contenedor-titulo .titulo-iconos .bi-sort-alpha-down {
+  color: white;
+  font-size: 2rem;
+  padding: 0% 5%;
+}
 @media (min-width: 1024px) {
   /* TIENDA */
   #seccion-tienda {
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-areas: "filtro productos";
+    grid-template-rows: 2% 98%;
+    grid-template-areas: "filtro titulo" "filtro productos";
   }
   .contenedor-filtro {
     grid-area: filtro;
     text-align: left;
+  }
+  .contenedor-titulo {
+    grid-area: titulo;
+    padding: 0% 2% 3% 2%;
   }
   .tienda-productos {
     grid-area: productos;
