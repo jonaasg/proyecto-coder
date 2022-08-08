@@ -1,0 +1,37 @@
+/* --------------------- CARDS ------------------------------------- */
+
+.card {
+    background-color: $color-principal;
+    border: 2px solid $color-acento;
+    box-shadow: 0px 0px 30px $color-shadow;
+
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-img-top {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.card-text-date {
+    color: rgb(0, 220, 207);
+    text-align: end;
+}
+
+.card-title {
+    color: white;
+
+    &:hover {
+        color: $color-acento;
+        transition: 00.5s;
+    }
+}
+
+.card-text {
+    color: white;
+}

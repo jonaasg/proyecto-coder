@@ -5,11 +5,11 @@ h2 {
 }
 
 .equipos-contenedor {
-    border: 2px solid rgb(0, 220, 207);
+    border: 2px solid $color-acento;
     padding: 2% 0%;
     margin: 2%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgb(0, 220, 207);
+    box-shadow: 0px 0px 20px $color-acento;
     background-color: $color-principal;
     display: flex;
     flex-direction: column;
